@@ -17,7 +17,7 @@ jobs:
       - name : build haxe code and cpp
         run : haxe compile.hxml
       - name : publish build
-       uses : actions/upload-artifact
-        with :
-          name : friccbot
-          path : bin/
+        uses : actions/upload-artifact
+          with :
+            name : friccbot
+            path : bin/
