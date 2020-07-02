@@ -18,6 +18,6 @@ jobs:
         run : haxe compile.hxml
       - name : publish build
         uses : actions/upload-artifact
-          with :
-            name : friccbot
-            path : bin/
+        with :
+          name : friccbot
+          path : bin/
