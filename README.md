@@ -2,6 +2,8 @@
 
 the discord bot for my guild, written in haxe with some externs.
 
-## dependencies
+## dependencies for building
 
-* Haxe 
+* Haxe
+* Hxcpp
+* [Haxicord](https://github.com/RaidAndFade/Haxicord)

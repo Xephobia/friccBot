@@ -1,6 +1,0 @@
-[submodule "lib/haxicord"]
-	path = lib/haxicord
-	url = https://github.com/RaidAndFade/Haxicord.git
-[submodule "lib/hxcpp"]
-	path = lib/hxcpp
-	url = https://github.com/HaxeFoundation/hxcpp.git

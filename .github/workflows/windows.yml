@@ -1,0 +1,23 @@
+name: windows 
+on: [push]
+jobs:
+  build:
+    name: build
+    runs-on: windows-latest
+    steps:
+      - name : install haxe
+        run : choco install haxe
+      - name : install haxicord
+        run : haxelib git https://github.com/RaidAndFade/Haxicord.git
+      - name : install hxcpp
+        run : haxelib install hxcpp
+
+      - uses : actions/checkout
+
+      - name : build haxe code and cpp
+        run : haxe compile.hxml
+      - name : publish build
+       uses : actions/upload-artifact
+        with :
+          name : friccbot
+          path : bin/
