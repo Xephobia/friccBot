@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : install haxe and setup haxelib
-        run : sudo add-apt-repository ppa:haxe/releases -y ; sudo apt-get update sudo apt-get install haxe -y ; mkdir ~/haxelib && haxelib setup ~/haxelib
+        run : sudo add-apt-repository ppa:haxe/releases -y ; sudo apt-get update ; sudo apt-get install haxe -y ; mkdir ~/haxelib && haxelib setup ~/haxelib
       - name : install haxicord
         run : haxelib git https://github.com/RaidAndFade/Haxicord.git
       - name : install hxcpp

@@ -6,7 +6,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name : setup haxelib
-        run : haxe_bin/haxelib setup
+        run : ./haxe_bin/haxelib setup
       - name : install haxicord
         run : haxelib git https://github.com/RaidAndFade/Haxicord.git
       - name : install hxcpp
