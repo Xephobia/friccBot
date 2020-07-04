@@ -5,10 +5,8 @@ jobs:
     name: build
     runs-on: windows-latest
     steps:
-      - name : install haxe
-        run : choco install haxe
       - name : setup haxelib
-        run : refreshenv && haxelib setup
+        run : haxe_bin/haxelib setup
       - name : install haxicord
         run : haxelib git https://github.com/RaidAndFade/Haxicord.git
       - name : install hxcpp
