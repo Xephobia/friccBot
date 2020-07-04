@@ -1,3 +1,4 @@
+dir
 cd haxe_bin
 dir
 haxelib setup
