@@ -8,7 +8,7 @@ jobs:
       - name : checkout
         uses : actions/checkout@v2.3.1
       - name : setup haxelib
-        run : cd haxe_bin ; .haxelib setup
+        run : cd haxe_bin ; ./haxelib setup
       - name : install haxicord
         run : haxelib git https://github.com/RaidAndFade/Haxicord.git
       - name : install hxcpp
