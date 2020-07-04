@@ -7,14 +7,8 @@ jobs:
     steps:
       - name : checkout
         uses : actions/checkout@v2.3.1
-      - name : install haxe and setup haxelib
-        run : sudo add-apt-repository ppa:haxe/releases -y ; sudo apt-get update ; sudo apt-get install haxe -y ; mkdir ~/haxelib && haxelib setup ~/haxelib
-      - name : install haxicord
-        run : haxelib git haxicord https://github.com/RaidAndFade/Haxicord.git
-      - name : install hxcpp
-        run : haxelib install hxcpp
-      - name : build haxe code and cpp
-        run : haxe compile.hxml
+      - name : add permission and run commands
+        run : chmod +x commands.sh ; ./commands.sh
       - name : publish build
         uses : actions/upload-artifact@v2
         with :
