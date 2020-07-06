@@ -1,4 +1,3 @@
-set PATH=%PATH%;%CD%\haxe_bin
 haxelib setup ../
 haxelib install hxcpp
 haxelib install hxcs
