@@ -13,7 +13,14 @@ jobs:
           iwr -useb get.scoop.sh | iex
           refreshenv
           scoop install haxe
-          ./commands.sh
+          haxelib setup ../
+          haxelib install hxcpp
+          haxelib install hxcs
+          haxelib git haxicord https://github.com/RaidAndFade/Haxicord.git
+          haxe cpp.hxml
+          haxe js.hxml
+          haxe csharp.hxml
+          haxe neko.hxml
       - name : publish build
         uses : actions/upload-artifact@v2
         with :
