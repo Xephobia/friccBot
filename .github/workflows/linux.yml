@@ -12,5 +12,20 @@ jobs:
       - name : publish build
         uses : actions/upload-artifact@v2
         with :
-          name : friccbot
-          path : bin/
+          name : friccbot_cpp
+          path : cpp/
+      - name : publish build
+        uses : actions/upload-artifact@v2
+        with :
+          name : friccbot_js
+          path : bot.js
+      - name : publish build
+        uses : actions/upload-artifact@v2
+        with :
+          name : friccbot_neko
+          path : bot.n
+      - name : publish build
+        uses : actions/upload-artifact@v2
+        with :
+          name : friccbot_csharp
+          path : csharp/bin/

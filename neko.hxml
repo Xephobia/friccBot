@@ -1,0 +1,4 @@
+-lib haxicord
+-cp src
+-main Main
+--neko bot.n

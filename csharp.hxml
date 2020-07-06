@@ -1,5 +1,5 @@
+-lib hxcs
 -lib haxicord
--lib hxcpp
 -cp src
 -main Main
---cpp bin/
+--cs csharp
